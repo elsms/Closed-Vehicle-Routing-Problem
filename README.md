@@ -1,6 +1,6 @@
 # Closed Vehicle Routing Problem
 
-As part of the Managerial Decision Making and Modeling course at Ca' Foscari University of Venice, we developed a closed multi-vehicle routing problem (CVRP) inspired by the San Polo di Piave facility of O-I, located in Treviso. The dataset used in our analysis was constructed by us, based on general operational insights we received about the facility.
+As part of the Managerial Decision Making and Modeling course at Ca' Foscari University of Venice, we developed a closed multi-vehicle routing problem (CVRP) inspired by the San Polo di Piave facility of O-I, located in Treviso (Italy). The dataset used in our analysis was constructed by us, based on general operational insights we received about the facility.
 
 Our objective was to determine the shortest possible routes to serve all customers included in the analysis, minimizing total travel distance and, consequently, operational costs and delivery time. We used Google OR-Tools for modeling and optimization, and visualized the routing solutions using QGIS.
 
