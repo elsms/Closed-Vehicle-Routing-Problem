@@ -1,0 +1,170 @@
+[
+    {
+        "CustomerID":"ID_0",
+        "City":"Treviso",
+        "Latitude":45.784141918863234,
+        "Longitude":12.403969823139361,
+        "Demand":0,
+        "Net profit":0
+    },
+    {
+        "CustomerID":"ID_1",
+        "City":"Venice",
+        "Latitude":45.36281692907395,
+        "Longitude":12.066580991966612,
+        "Demand":120,
+        "Net profit":7200
+    },
+    {
+        "CustomerID":"ID_2",
+        "City":"Verona",
+        "Latitude":45.412011463704175,
+        "Longitude":11.24503821147763,
+        "Demand":150,
+        "Net profit":8250
+    },
+    {
+        "CustomerID":"ID_3",
+        "City":"Treviso",
+        "Latitude":45.833021466258685,
+        "Longitude":12.469412991973739,
+        "Demand":100,
+        "Net profit":6500
+    },
+    {
+        "CustomerID":"ID_4",
+        "City":"Vicenza",
+        "Latitude":45.45494999821133,
+        "Longitude":11.332366594282341,
+        "Demand":130,
+        "Net profit":7800
+    },
+    {
+        "CustomerID":"ID_5",
+        "City":"Treviso",
+        "Latitude":45.80826559528028,
+        "Longitude":12.498015623140923,
+        "Demand":140,
+        "Net profit":9100
+    },
+    {
+        "CustomerID":"ID_6",
+        "City":"Venice",
+        "Latitude":45.64156740495837,
+        "Longitude":12.50548481149217,
+        "Demand":150,
+        "Net profit":9000
+    },
+    {
+        "CustomerID":"ID_7",
+        "City":"Verona",
+        "Latitude":45.50978616946431,
+        "Longitude":10.922712457478285,
+        "Demand":150,
+        "Net profit":8250
+    },
+    {
+        "CustomerID":"ID_8",
+        "City":"Treviso",
+        "Latitude":45.753576163320304,
+        "Longitude":12.412213423137477,
+        "Demand":50,
+        "Net profit":3250
+    },
+    {
+        "CustomerID":"ID_9",
+        "City":"Treviso",
+        "Latitude":45.88042275758007,
+        "Longitude":12.005074767326422,
+        "Demand":60,
+        "Net profit":3900
+    },
+    {
+        "CustomerID":"ID_10",
+        "City":"Treviso",
+        "Latitude":45.75045332678114,
+        "Longitude":12.223882811499044,
+        "Demand":40,
+        "Net profit":2600
+    },
+    {
+        "CustomerID":"ID_11",
+        "City":"Treviso",
+        "Latitude":45.882610688207876,
+        "Longitude":12.003896840343618,
+        "Demand":35,
+        "Net profit":2275
+    },
+    {
+        "CustomerID":"ID_12",
+        "City":"Treviso",
+        "Latitude":45.944158958342726,
+        "Longitude":12.169331051985749,
+        "Demand":30,
+        "Net profit":1950
+    },
+    {
+        "CustomerID":"ID_13",
+        "City":"Verona",
+        "Latitude":45.50387753475653,
+        "Longitude":11.032349167302533,
+        "Demand":30,
+        "Net profit":1650
+    },
+    {
+        "CustomerID":"ID_14",
+        "City":"Verona",
+        "Latitude":45.52071863134774,
+        "Longitude":10.938767323122729,
+        "Demand":100,
+        "Net profit":5500
+    },
+    {
+        "CustomerID":"ID_15",
+        "City":"Verona",
+        "Latitude":45.44055682100567,
+        "Longitude":10.782971892900798,
+        "Demand":50,
+        "Net profit":2750
+    },
+    {
+        "CustomerID":"ID_16",
+        "City":"Verona",
+        "Latitude":45.49783743540823,
+        "Longitude":11.016408705339176,
+        "Demand":130,
+        "Net profit":7150
+    },
+    {
+        "CustomerID":"ID_17",
+        "City":"Verona",
+        "Latitude":45.5319425318271,
+        "Longitude":10.875118667304308,
+        "Demand":13,
+        "Net profit":715
+    },
+    {
+        "CustomerID":"ID_18",
+        "City":"Verona",
+        "Latitude":45.54516110763574,
+        "Longitude":10.924728582649879,
+        "Demand":13,
+        "Net profit":715
+    },
+    {
+        "CustomerID":"ID_19",
+        "City":"Vicenza",
+        "Latitude":45.371761975188384,
+        "Longitude":11.43495550962183,
+        "Demand":13,
+        "Net profit":780
+    },
+    {
+        "CustomerID":"ID_20",
+        "City":"Vicenza",
+        "Latitude":45.780981894962274,
+        "Longitude":11.723512320790348,
+        "Demand":13,
+        "Net profit":780
+    }
+]
