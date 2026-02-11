@@ -33,7 +33,7 @@ The dataset includes 20 customers (nodes) and one depot, corresponding to the O-
 
 # Methodology 
 
-Several solution strategies were implemented.
+Several solution strategies were implemented. 
 
 #### 1. Heuristic Approach
 An initial feasible solution was implemented using a **nearest neighbour constructive heuristic**, implemented in OR-Tools via the `PATH_CHEAPEST_ARC` strategy. The first solution was then refined using the `GUIDED_LOCAL_SEARCH` metaheuristic to escape poor local optima and reduce total travel distance by encouraging the solver to explore alternatives.
@@ -48,5 +48,6 @@ Starting from the first solution, additional improvement strategies available in
 A **cluster-first, route-second approach** was also explored. Customers were first grouped into clusters based on geographical proximity, after which the nearest neighbour heuristic was applied within each cluster to generate routes. The procedure was then repeated using demand-based clustering, enabling a comparison between spatial and demand-driven solutions.
 
 # Key Findings 
+The visualization in QGis is available in the [folder](Visualization-in-QGIS).
 
 # Conclusion 
