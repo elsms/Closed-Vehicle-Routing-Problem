@@ -35,11 +35,17 @@ The dataset includes 20 customers (nodes) and one depot, corresponding to the O-
 
 Several solution strategies were implemented.
 
-### Heuristic approach
-An initial feasible solution was implemented using a Nearest Neighbour constructive heuristic, implemented in OR-Tools via the `PATH_CHEAPEST_ARC` strategy. The first solution was then refined using the `GUIDED_LOCAL_SEARCH` metaheuristic to escape poor local optima and reduce total travel distance. 
+#### 1. Heuristic Approach
+An initial feasible solution was implemented using a **nearest neighbour constructive heuristic**, implemented in OR-Tools via the `PATH_CHEAPEST_ARC` strategy. The first solution was then refined using the `GUIDED_LOCAL_SEARCH` metaheuristic to escape poor local optima and reduce total travel distance by encouraging the solver to explore alternatives.
 
-* **Metaheuristic strategies**: We further enhanced the initial solution using various built-in metaheuristics available in OR-Tools, including `TABU_SEARCH`, `SIMULATED_ANNEALING`, `AUTOMATIC`, and `GREEDY_DESCENT`.
-* **Cluster-first, Route-second model**: Finally, we implemented a clustering strategy by grouping customers based on geographical proximity. We then applied the Nearest Neighbour method again using OR-Tools. We repeated this approach by clustering based on demand as well.
+#### 2. Metaheuristic Strategies
+Starting from the first solution, additional improvement strategies available in OR-Tools were used, including:
+* `TABU_SEARCH`
+* `SIMULATED_ANNEALING`
+* `AUTOMATIC`
+* `GREEDY_DESCENT`
+#### 3. Cluster-first, Route-second Model
+A **cluster-first, route-second approach** was also explored. Customers were first grouped into clusters based on geographical proximity, after which the nearest neighbour heuristic was applied within each cluster to generate routes. The procedure was then repeated using demand-based clustering, enabling a comparison between spatial and demand-driven solutions.
 
 # Key Findings 
 
