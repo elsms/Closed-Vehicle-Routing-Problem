@@ -6,7 +6,7 @@ As part of the Managerial Decision Making and Modeling course at Ca’ Foscari U
 The dataset was constructed specifically for this study, based on general operational insights obtained about the facility.
 
 ### Dataset Description 
-The [dataset](Data) includes 20 customers (nodes) and one depot, corresponding to the O-I San Polo di Piave facility located in Treviso (Italy). For each node, the following attributes are reported: 
+The [![Dataset](https://img.shields.io/badge/Dataset-green)](Data) includes 20 customers (nodes) and one depot, corresponding to the O-I San Polo di Piave facility located in Treviso (Italy). For each node, the following attributes are reported: 
 * **CustomerID**, where the depot is identified as `ID_0`
 * **Longitude**
 * **Latitude**
