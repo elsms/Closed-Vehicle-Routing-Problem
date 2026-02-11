@@ -1,6 +1,6 @@
 # Introduction 
 
-As part of the Managerial Decision Making and Modeling course at Ca’ Foscari University of Venice, a closed multi-vehicle routing problem (CVRP) inspired by the San Polo di Piave facility of O-I, located in Treviso (Italy), was developed. The objective was to determine the shortest possible routes to serve all customers included in the analysis, minimizing total travel distance and, consequently, operational costs and delivery time. Google OR-Tools was used for modeling and optimization, and the routing solutions were visualized using QGIS.
+As part of the [Managerial Decision Making and Modeling](https://www.unive.it/data/course/506446) course at [Ca’ Foscari University of Venice](https://www.unive.it/web/en/497/home), a closed multi-vehicle routing problem (CVRP) inspired by the San Polo di Piave facility of O-I, located in Treviso (Italy), was developed. The objective was to determine the shortest possible routes to serve all customers included in the analysis, minimizing total travel distance and, consequently, operational costs and delivery time. Google OR-Tools was used for modeling and optimization, and the routing solutions were visualized using QGIS.
 
 # Data 
 The dataset was constructed specifically for this study, based on general operational insights obtained about the facility.
