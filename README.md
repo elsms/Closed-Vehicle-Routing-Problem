@@ -1,8 +1,6 @@
 # Introduction 
 
-As part of the Managerial Decision Making and Modeling course at Ca’ Foscari University of Venice, a closed multi-vehicle routing problem (CVRP) inspired by the San Polo di Piave facility of O-I, located in Treviso (Italy), was developed. 
-
-The objective was to determine the shortest possible routes to serve all customers included in the analysis, minimizing total travel distance and, consequently, operational costs and delivery time. Google OR-Tools was used for modeling and optimization, and the routing solutions were visualized using QGIS.
+As part of the Managerial Decision Making and Modeling course at Ca’ Foscari University of Venice, a closed multi-vehicle routing problem (CVRP) inspired by the San Polo di Piave facility of O-I, located in Treviso (Italy), was developed. The objective was to determine the shortest possible routes to serve all customers included in the analysis, minimizing total travel distance and, consequently, operational costs and delivery time. Google OR-Tools was used for modeling and optimization, and the routing solutions were visualized using QGIS.
 
 # Data 
 The dataset was constructed specifically for this study, based on general operational insights obtained about the facility.
@@ -35,8 +33,14 @@ The dataset includes 20 customers (nodes) and one depot, corresponding to the O-
 
 # Methodology 
 
-We found several solutions:
+Several solution strategies were implemented.
 
-* **Heuristic approach**: We first used the Nearest Neighbour method, adopting a constructive approach with `PATH_CHEAPEST_ARC` to generate an initial solution. We then improved it using the `GUIDED_LOCAL_SEARCH` metaheuristic.
+### Heuristic approach
+An initial feasible solution was implemented using a Nearest Neighbour constructive heuristic, implemented in OR-Tools via the `PATH_CHEAPEST_ARC` strategy. The first solution was then refined using the `GUIDED_LOCAL_SEARCH` metaheuristic to escape poor local optima and reduce total travel distance. 
+
 * **Metaheuristic strategies**: We further enhanced the initial solution using various built-in metaheuristics available in OR-Tools, including `TABU_SEARCH`, `SIMULATED_ANNEALING`, `AUTOMATIC`, and `GREEDY_DESCENT`.
 * **Cluster-first, Route-second model**: Finally, we implemented a clustering strategy by grouping customers based on geographical proximity. We then applied the Nearest Neighbour method again using OR-Tools. We repeated this approach by clustering based on demand as well.
+
+# Key Findings 
+
+# Conclusion 
