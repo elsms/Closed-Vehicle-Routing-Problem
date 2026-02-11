@@ -12,7 +12,7 @@ The [dataset](Data) includes 20 customers (nodes) and one depot, corresponding t
 * **CustomerID**, where the depot is identified as `ID_0`
 * **Longitude**
 * **Latitude**
-* **City**, one of: Treviso, Padua, Vicenza, Vewnice or Verona 
+* **City**, one of: Treviso, Padua, Vicenza, Venice or Verona 
 * **Demand**, which is the daily demand in pallets 
 * **Net Profit**, which is the daily net profit computed as: $\text{daily demand} \cdot (\text{selling price per pallet} - (\text{production cost per pallet} + \text{transportation cost per pallet}))$
 
