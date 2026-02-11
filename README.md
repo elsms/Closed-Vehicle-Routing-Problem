@@ -1,5 +1,5 @@
 # Introduction 
-[![Notebook](https://img.shields.io/badge/Notebook-Google%20Colab-pink)](Project.ipynb)
+[![Google Colab](https://img.shields.io/badge/Google20%Colab-Notebook-pink)](Project.ipynb)
 [![Google OR-Tools](https://img.shields.io/badge/Google_OR--Tools-Optimization-orange)](https://developers.google.com/optimization/routing/cvrp?_gl=1*70op1f*_up*MQ..*_ga*OTczOTE2ODM0LjE3NzA4MzU4MzQ.*_ga_SM8HXJ53K2*czE3NzA4MzU4MzQkbzEkZzAkdDE3NzA4MzU4MzQkajYwJGwwJGgw)
 [![QGIS](https://img.shields.io/badge/QGIS-Visualization-green)](https://qgis.org/download/)
 
