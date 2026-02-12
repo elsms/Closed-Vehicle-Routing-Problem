@@ -51,6 +51,6 @@ Starting from the first solution, additional improvement strategies available in
 A **cluster-first, route-second approach** was also explored. Customers were first grouped into clusters based on geographical proximity, after which the nearest neighbour heuristic was applied within each cluster to generate routes. The procedure was then repeated using demand-based clustering, enabling a comparison between spatial and demand-driven solutions.
 
 # Key Findings 
-The visualization in QGis is available in the [folder](Visualization-in-QGIS).
+The visualization in QGIS is available in the [folder](Visualization-in-QGIS).
 
 # Conclusion 
