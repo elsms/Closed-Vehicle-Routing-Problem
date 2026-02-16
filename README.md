@@ -38,22 +38,32 @@ The [dataset](Data) includes 20 customers (nodes) and one depot, corresponding t
 * Verona: €15 
 
 # Methodology 
+The goal of the analysis is to determine the optimal routes that serve all customers while minimizing total travel distance, computed using OpenStreetMap (OSM) data. To ensure feasibility and robustness, several modeling considerations are required.
+* High-demand customers whose requirements exceed a single vehicle’s capacity are split into **virtual nodes** with smaller demands. This allows Google OR-Tools to allocate multiple vehicles to serve those customers without violating capacity constraints.
+* **Subtour elimination** is handled automatically by Google OR-Tools by enforcing that all vehicles return to the depot after completing their assigned routes. Multi-trips are not permitted, meaning vehicles cannot return to the depot to reload once dispatched.
 
-Several solution strategies were implemented. 
+Several solution strategies are implemented to evaluate and improve routing performance. 
 
 #### 1. Heuristic Approach
-An initial feasible solution was implemented using a **nearest neighbour constructive heuristic**, implemented in OR-Tools via the `PATH_CHEAPEST_ARC` strategy. The first solution was then refined using the `GUIDED_LOCAL_SEARCH` metaheuristic to escape poor local optima and reduce total travel distance by encouraging the solver to explore alternatives.
+An initial feasible solution is implemented using a **nearest neighbour constructive heuristic**, implemented in OR-Tools via the `PATH_CHEAPEST_ARC` strategy. The first solution is then refined using the `GUIDED_LOCAL_SEARCH` metaheuristic to escape poor local optima and reduce total travel distance by encouraging the solver to explore alternatives. 
 
 #### 2. Metaheuristic Strategies
-Starting from the first solution, additional improvement strategies available in OR-Tools were used, including:
+Starting from the first solution, additional improvement strategies available in OR-Tools are used, including:
 * `TABU_SEARCH`
 * `SIMULATED_ANNEALING`
 * `AUTOMATIC`
 * `GREEDY_DESCENT`
+* 
 #### 3. Cluster-first, Route-second Model
-A **cluster-first, route-second approach** was also explored. Customers were first grouped into clusters based on geographical proximity, after which the nearest neighbour heuristic was applied within each cluster to generate routes. The procedure was then repeated using demand-based clustering, enabling a comparison between spatial and demand-driven solutions.
+A **cluster-first, route-second approach** is also explored. Customers are first grouped into clusters based on geographical proximity, after which the nearest neighbour heuristic is applied within each cluster to generate routes. The procedure is then repeated using demand-based clustering, enabling a comparison between spatial and demand-driven solutions.
 
 # Key Findings 
+The total demand is 1517. 
+
+* The initial heuristic solution serves all customers with a total travel distance of 9,229 km while delivering 1,517 pallets. The same objective value is obatined when applying the `GUIDED_LOCAL_SEARCH` improvement, indicating that the heuristic solution is already near-optimal in terms of total distance.
+* Although the second solution, obtained through metaheuristic refinement, produces routes with slightly different structures, the overall results stay the same.
+* Clustering by closeness 
+
 The visualization in QGIS is available in the [folder](Visualization-in-QGIS).
 
 # Conclusion 
