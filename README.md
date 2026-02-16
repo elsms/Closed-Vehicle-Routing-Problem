@@ -53,7 +53,7 @@ Starting from the first solution, additional improvement strategies available in
 * `SIMULATED_ANNEALING`
 * `AUTOMATIC`
 * `GREEDY_DESCENT`
-* 
+
 #### 3. Cluster-first, Route-second Model
 A **cluster-first, route-second approach** is also explored. Customers are first grouped into clusters based on geographical proximity, after which the nearest neighbour heuristic is applied within each cluster to generate routes. The procedure is then repeated using demand-based clustering, enabling a comparison between spatial and demand-driven solutions.
 
