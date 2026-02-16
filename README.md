@@ -58,12 +58,17 @@ Starting from the first solution, additional improvement strategies available in
 A **cluster-first, route-second approach** is also explored. Customers are first grouped into clusters based on geographical proximity, after which the nearest neighbour heuristic is applied within each cluster to generate routes. The procedure is then repeated using demand-based clustering, enabling a comparison between spatial and demand-driven solutions.
 
 # Key Findings 
-The total demand is 1517. 
 
-* The initial heuristic solution serves all customers with a total travel distance of 9,229 km while delivering 1,517 pallets. The same objective value is obatined when applying the `GUIDED_LOCAL_SEARCH` improvement, indicating that the heuristic solution is already near-optimal in terms of total distance.
-* Although the second solution, obtained through metaheuristic refinement, produces routes with slightly different structures, the overall results stay the same.
-* Clustering by closeness 
+* The initial heuristic solution serves all customers with a total travel distance of 9,184 km while satisfying the total demand of 1,517 pallets. Applying the `GUIDED_LOCAL_SEARCH` improvement reduces the total travel distance to 8,971 km. This improvement does not result from reduced service coverage, but rather from smarter route optimization and more efficient use of vehicle capacity. 
+* The metaheuristic strategy `TABU_SEARCH` produces the same result as `GUIDED_LOCAL_SEARCH`. The remaining metaheuristic approaches (* `SIMULATED_ANNEALING`, `AUTOMATIC` and `GREEDY_DESCENT`) return the same result as `PATH_CHEAPEST_ARC`.
+* Clustering by proximity delivers all pallets with a total travel distance of 9,180 km, nearly identical to the 9,184 km observed using the initial nearest-neighbor heuristic. Clustering by demand consistently returns the same result as the first clustering attempt.
 
 The visualization in QGIS is available in the [folder](Visualization-in-QGIS).
 
 # Conclusion 
+Among all strategies tested, the `GUIDED_LOCAL_SEARCH` metaheuristic solution achieves the lowest total travel distance of 8,971 km while serving all customers and meeting the full demand. This makes it the **optimal routing solution**. 
+<img width="950" height="479" alt="image" src="https://github.com/user-attachments/assets/f4db7abc-b679-4477-857e-6b6a6cc01a8d" />
+
+
+
+
