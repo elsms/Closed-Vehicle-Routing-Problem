@@ -67,8 +67,9 @@ The visualization in QGIS is available in the [folder](Visualization-in-QGIS).
 
 # Conclusion 
 Among all strategies tested, the `GUIDED_LOCAL_SEARCH` metaheuristic solution achieves the lowest total travel distance of 8,971 km while serving all customers and meeting the full demand. This makes it the **optimal routing solution**. 
-<img width="950" height="479" alt="image" src="https://github.com/user-attachments/assets/f4db7abc-b679-4477-857e-6b6a6cc01a8d" />
-
+<div align="center">
+<img width="900" height="479" alt="image" src="https://github.com/user-attachments/assets/f4db7abc-b679-4477-857e-6b6a6cc01a8d" />
+</div>
 
 
 
